@@ -10,5 +10,9 @@ manifest:
     - name: zmk
       remote: zmkfirmware
       import: app/west.yml
+    - name: ''
+      url: https://github.com/joric/nrfmicro/
+      revision: main
+      path: modules/
   self:
     path: config

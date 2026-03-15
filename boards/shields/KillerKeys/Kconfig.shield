@@ -1,0 +1,5 @@
+config SHIELD_KILLERKEYS_LEFT
+    def_bool $(shields_list_contains,killerkeys_left)
+
+config SHIELD_KILLERKEYS_RIGHT
+    def_bool $(shields_list_contains,killerkeys_right)

@@ -1,0 +1,16 @@
+if SHIELD_KILLERKEYS_LEFT || SHIELD_KILLERKEYS_RIGHT
+
+config ZMK_KEYBOARD_NAME
+    default "KillerKeys"
+
+config ZMK_SPLIT
+    default y
+
+endif
+
+if SHIELD_KILLERKEYS_LEFT
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
