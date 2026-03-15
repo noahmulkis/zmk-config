@@ -3,7 +3,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
-    keymap {
+    keymap = <
         compatible = "zmk,keymap";
             default_layer {
             bindings = [
@@ -21,7 +21,7 @@
                 &kp N &kp M &kp COMMA &kp DOT &kp FSLH &kp RSHFT &kp UP &kp DOWN &kp RET
                 &kp BSPC &kp SPACE &kp RALT &kp RGUI &kp RCTRL &kp LEFT &kp RIGHT &kp ESC
                 &kp RSHFT
-            ];
+            >;
         };
     };
 };
