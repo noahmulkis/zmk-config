@@ -5,21 +5,3 @@
         zmk,kscan = &kscan0;
     };
 };
-```
-
----
-
-**What this does:** Both files are identical for now — they simply include the shared `.dtsi` file you just made. Since your left and right halves are mirrored (same pins, flipped PCB), they use the exact same matrix definition.
-
-If the halves ever had *different* pin wiring you'd put the differences here, but in your case the shared `.dtsi` covers everything.
-
----
-
-Your shield folder should now look like this:
-```
-boards/shields/killerkeys/
-├── Kconfig.shield
-├── Kconfig.defconfig
-├── killerkeys.dtsi
-├── killerkeys_left.overlay
-└── killerkeys_right.overlay
